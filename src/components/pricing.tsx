@@ -57,7 +57,7 @@ export default function Pricing() {
                                 {[
                                     'DACH company discovery',
                                     'Impressum data extraction',
-                                    'Filters',
+                                    'Basic Filters',
                                     'CSV export',
                                     '1,000 credits / month',
                                 ].map((item, index) => (
@@ -95,7 +95,7 @@ export default function Pricing() {
                                     {[
                                         'Everything in Pro',
                                         'Impressum data extraction',
-                                        'Advanced filters (industry, region, size, keywords)',
+                                    'Advanced Filters',
                                         '3,000 credits / month',
                                         'Bulk export (CSV / Excel)',
                                         'Team access',
@@ -108,7 +108,7 @@ export default function Pricing() {
                                             key={index}
                                             className="flex items-center gap-2">
                                             {item === 'Everything in Pro' ? <Plus className="size-3" /> : <Check className="size-3" />}
-                                            {item === 'Everything in Pro' ? `+ ${item}` : item}
+                                            {item}
                                         </li>
                                     ))}
                                 </ul>
