@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
-import { Check } from 'lucide-react'
+import { Check, Plus } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Pricing() {
@@ -38,7 +38,7 @@ export default function Pricing() {
                     <div className="rounded-(--radius) flex flex-col justify-between space-y-8 border p-6 md:col-span-2 md:rounded-r-none md:border-r-0 lg:p-10">
                         <div className="space-y-4">
                             <div>
-                                <h2 className="font-medium">PRO</h2>
+                                <h2 className="text-sm font-medium">Pro</h2>
                                 <span className="my-3 block text-2xl font-semibold">€79 / user / month</span>
                                 <p className="text-muted-foreground text-sm">For: Solo founders, freelancers, small agencies</p>
                             </div>
@@ -93,7 +93,7 @@ export default function Pricing() {
 
                                 <ul className="mt-4 list-outside space-y-3 text-sm">
                                     {[
-                                        'DACH company discovery',
+                                        'Everything in Pro',
                                         'Impressum data extraction',
                                         'Advanced filters (industry, region, size, keywords)',
                                         '3,000 credits / month',
@@ -107,8 +107,8 @@ export default function Pricing() {
                                         <li
                                             key={index}
                                             className="flex items-center gap-2">
-                                            <Check className="size-3" />
-                                            {item}
+                                            {item === 'Everything in Pro' ? <Plus className="size-3" /> : <Check className="size-3" />}
+                                            {item === 'Everything in Pro' ? `+ ${item}` : item}
                                         </li>
                                     ))}
                                 </ul>
@@ -120,7 +120,7 @@ export default function Pricing() {
                 <div className="rounded-(--radius) mt-6 flex flex-col space-y-8 border p-6 lg:p-10 md:flex-row md:items-start md:justify-between md:gap-10 md:space-y-0">
                     <div className="space-y-6 md:max-w-sm">
                         <div>
-                            <h2 className="font-medium">Credits</h2>
+                            <h2 className="text-sm font-medium">Credits</h2>
                             <p className="text-muted-foreground mt-2 text-sm">Choose how many credits you need. Starts at 3,000.</p>
                         </div>
 

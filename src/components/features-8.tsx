@@ -181,7 +181,7 @@ export default function FeaturesSection() {
                         <Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
                             <CardContent className="grid pt-6 sm:grid-cols-2">
                                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                                    <div className="relative flex aspect-square size-12 animate-pulse rounded-full border dark:border-white/10 before:absolute before:-inset-2 before:rounded-full before:border dark:before:border-white/5">
+                                    <div className="relative flex aspect-square size-12 rounded-full border dark:border-white/10 before:absolute before:-inset-2 before:rounded-full before:border dark:before:border-white/5">
                                         <Download
                                             className="m-auto size-5"
                                             strokeWidth={1}
@@ -242,7 +242,7 @@ export default function FeaturesSection() {
                         <Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
                             <CardContent className="grid h-full pt-6 sm:grid-cols-2">
                                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                                    <div className="relative flex aspect-square size-12 animate-pulse rounded-full border dark:border-white/10 before:absolute before:-inset-2 before:rounded-full before:border dark:before:border-white/5">
+                                    <div className="relative flex aspect-square size-12 rounded-full border dark:border-white/10 before:absolute before:-inset-2 before:rounded-full before:border dark:before:border-white/5">
                                         <BadgeCheck
                                             className="m-auto size-6"
                                             strokeWidth={1}
@@ -316,5 +316,4 @@ export default function FeaturesSection() {
         </section>
     )
 }
-
 
