@@ -5,7 +5,7 @@ export const Logo = ({ className }: { className?: string }) => {
         <img
             src="/dachreach-logo.svg"
             alt="dachreach"
-            className={cn('h-5 w-auto dark:invert', className)}
+            className={cn('h-7 w-auto dark:invert', className)}
         />
     )
 }
